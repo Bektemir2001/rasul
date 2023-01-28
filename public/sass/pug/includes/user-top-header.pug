@@ -1,0 +1,54 @@
+.top-header
+  .container-lg.top-header__list
+    .top-header__social
+      a.social-site(href='#')
+        i.fa-brands.fa-instagram
+      a.social-site(href='#')
+        i.fa-brands.fa-twitter
+      a.social-site(href='#')
+        i.fa-brands.fa-vk
+      a.social-site(href='#')
+        i.fa-brands.fa-telegram
+    .top-header__logo 
+      a.navbar-brand(href='index.html')
+        i.fa-solid.fa-moon
+    .top-header__number
+      h5
+        a(href="tel:+996708198625") +996 708 19 86 25
+    .auth-user
+      button#dropdownMenuButton1.header__authorization__btn(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+        i.fa-solid.fa-user
+      ul.dropdown-menu.drop-user(aria-labelledby='dropdownMenuButton1')
+        li
+          a.dropdown-item(href='profile-user.html') Профиль
+        li
+          a.dropdown-item(href='#') Выйти
+    .header__hamburgerMenu(onClick="toggleMenu()")
+      button.hamburger.hamburger--spring(type='button')
+          span.hamburger-box
+              span.hamburger-inner
+      .header__dropMenu
+        .header__top
+          .header__top__social
+            a.social-site(href='#')
+              i.fa-brands.fa-instagram
+            a.social-site(href='#')
+              i.fa-brands.fa-twitter
+            a.social-site(href='#')
+              i.fa-brands.fa-vk
+            a.social-site(href='#')
+              i.fa-brands.fa-telegram
+          .header__top__logo 
+            a.navbar-brand(href='index.html')
+              i.fa-solid.fa-moon
+          .header__top__number
+            h5
+              | +996 708 19 86 25
+        .header__linksBlock
+          li: a.header__nav-link(href="index.html") Главная
+          li: a.header__nav-link(href="aboutus.html") О нас
+          li: a.header__nav-link(href="contacts.html") Контакты
+          li: a.header__nav-link(href="women.html") Женский 
+          li: a.header__nav-link(href="man.html") Мужской
+          li: a.header__nav-link(href="semestr.html") Семестр
+          li: a.header__nav-link(href="user-items.html") Обучение

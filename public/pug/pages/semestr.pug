@@ -1,0 +1,75 @@
+extends ../base
+
+
+block content 
+    .wrapper 
+        include ../includes/user-top-header
+        section.section__banner
+            include ../includes/user-header
+            .container-md.pt-5.pb-5
+                .section__semestr.p-5
+                    table.table.table-bordered
+                        thead
+                            tr
+                                th(scope='col',colspan='6') Семестры 
+                                th(scope='col') Предметы
+                        tbody.table-bordered__list
+                            tr
+                                td(rowspan='4',colspan='6') Первый семестр
+                                td(colspan='5') 
+                                    a(href="item-details.html")  Физика
+                            tr
+                                td(bgcolor='#ccc') 
+                                    a(href="item-details.html") Арабский язык
+                            tr
+                                td 
+                                    a(href="item-details.html") Английский язык
+                            tr
+                                td(bgcolor='#ccc') 
+                                    a(href="item-details.html") Арабский язык
+                            tr
+                                td(rowspan='5', colspan='6')  Второй семестр
+                                td 
+                                    a(href="item-details.html") Физика
+                            tr
+                                td(bgcolor='#ccc') 
+                                    a(href="item-details.html") Арабский язык
+                            tr
+                                td 
+                                    a(href="item-details.html") Английский язык
+                            tr
+                                td(bgcolor='#ccc') 
+                                    a(href="item-details.html") Арабский язык
+                            tr
+                                td 
+                                 a(href="item-details.html") Английский язык
+                            tr
+                                td(rowspan='4', colspan='6') Третий семестр
+                                td 
+                                    a(href="item-details.html") Физика
+                            tr
+                                td(bgcolor='#ccc') 
+                                 a(href="item-details.html") Арабский язык
+                            tr
+                                td 
+                                 a(href="item-details.html") Английский язык
+                            tr
+                                td(bgcolor='#ccc') 
+                                    a(href="item-details.html") Арабский язык
+                            tr
+                                td(rowspan='5',colspan='6')  Четвёртый семестр
+                                td 
+                                    a(href="item-details.html") Физика
+                            tr
+                                td(bgcolor='#ccc') 
+                                    a(href="item-details.html") Арабский язык
+                            tr
+                                td 
+                                    a(href="item-details.html") Английский язык
+                            tr
+                                td(bgcolor='#ccc') 
+                                    a(href="item-details.html") Арабский язык
+                            tr
+                                td 
+                                    a(href="item-details.html") Английский язык
+            include ../includes/footer

@@ -1,0 +1,30 @@
+extends ../base
+
+
+block content 
+    .wrapper
+        include ../includes/top-header
+        section.section__banner
+            include ../includes/header
+            .section__application__form.container-lg
+                h5 Для зачисление в наш институт  можете  оставить 
+                    br
+                    |заявку и мы с вами свяжемся!
+                form(action="#").section__application__form__body
+                    .mb-3
+                        label.form-label(for='exampleFormControlInput1') Имя*
+                        input#exampleFormControlInput1.form-control(type='text')
+                    .mb-3
+                        label.form-label(for='exampleFormControlInput1') Фамилия*
+                        input#exampleFormControlInput1.form-control(type='text')
+                    .mb-3
+                        label.form-label(for='exampleFormControlInput1') Номер телефона*
+                        input#exampleFormControlInput1.form-control(type='text')
+                    .mb-3
+                        label.form-label(for='exampleFormControlInput1') Ваш адрес электроной почты* 
+                        input#exampleFormControlInput1.form-control(type='email')
+                    .mb-3
+                    .form__btn
+                        button.form__btn__aplicBtn
+                            a(href="#") Отправить 
+        include ../includes/footer

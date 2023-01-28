@@ -1,0 +1,71 @@
+header#header-bg
+  .header.container-lg
+    nav.navbar
+      ul.header__nav-item
+        li
+          a.header__nav-link(href="index.html") Главна
+        li.nav-item.dropdown
+          a.nav-link.link-drop.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | О Нас
+          ul.drop-menu.dropdown-menu
+            li
+              a.dropdown-item(href='#') О Школе
+            li
+              a.dropdown-item(href='aboutus.html') О Нас
+            li
+              a.dropdown-item(href='#') Как поступить?
+        li
+          a.header__nav-link(href="contacts.html") Контакты
+        li
+          a.header__nav-link(href="women.html") Женский
+        li
+          a.header__nav-link(href="man.html") Мужской
+        li
+          a.header__nav-link(href="tax.html") Закят
+        li
+          a.header__nav-link(href="devouring.html") Пожертвование
+    nav.header__authorization
+      a.header__signIn.me-2(href="#" data-bs-toggle='modal' data-bs-target='#exampleModal5') Войти
+        #exampleModal5.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+          .modal-dialog.modal-fullscreen
+            .modal-content
+              .modal-header
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              .modal-body
+                .auth-body
+                  form.auth-form
+                    h5.mb-3 Вход
+                    .mb-3
+                      input#exampleInputEmail9.form-control(type='email' aria-describedby='emailHelp' placeholder='Логин(Введите электронную почту)')
+                    .mb-3
+                      input#exampleInputPassword2.form-control(type='password' placeholder='Придумайте пароль')
+                    .mb-3
+                      input#exampleInputEmail11.form-control(type='email' aria-describedby='emailHelp' placeholder='Имя')
+                    .autBtn
+                      button.btnSignIn(type='submit') Войти
+      a.header__signIn(href="#" data-bs-toggle='modal' data-bs-target='#exampleModal') Регистрация
+        #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+          .modal-dialog.modal-fullscreen
+            .modal-content
+              .modal-header
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+              .modal-body
+                .auth-body
+                  form.auth-form
+                    h5.mb-3 Регистрация
+                    .mb-3
+                      input#exampleInputEmail5.form-control(type='email' aria-describedby='emailHelp' placeholder='Введите электронную почту')
+                    .mb-3
+                      input#exampleInputPassword6.form-control(type='password' placeholder='Придумайте пароль')
+                    .mb-3
+                      input#exampleInputEmail7.form-control(type='email' aria-describedby='emailHelp' placeholder='Имя')
+                    .mb-3
+                      input#exampleInputEmail8.form-control(type='email' aria-describedby='emailHelp' placeholder='Фамилия')
+                    .mb-3
+                      select.form-select(aria-label='Default select example')
+                        option(selected='') Направление
+                        option(value='1') Женский
+                        option(value='2') Мужской
+                    .autBtn
+                      button.btnSignIn(type='submit') Зарегистрироваться
+        

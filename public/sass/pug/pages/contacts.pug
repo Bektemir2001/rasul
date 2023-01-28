@@ -1,0 +1,45 @@
+extends ../base
+
+
+block content 
+    .wrapper
+        include ../includes/top-header
+        section.section__banner
+            include ../includes/header
+            .section__contacts__content.container
+                .row
+                    .col
+                        .section__contacts__content__form.m-5
+                            h5 Форма обратной связи
+                            p
+                                | Отправить сообщение. Все поля, 
+                                br
+                                |  отмеченные звездочкой, являются обязательными.
+
+                            form(action="#").form__body
+                                .mb-3
+                                    label.form-label(for='exampleFormControlInput1') Имя*
+                                    input#exampleFormControlInput1.form-control(type='text')
+                                .mb-3
+                                    label.form-label(for='exampleFormControlInput2') Ваш адрес электроной почты* 
+                                    input#exampleFormControlInput2.form-control(type='email')
+                                .mb-3
+                                    label.form-label(for='exampleFormControlInput3') Тема
+                                    input#exampleFormControlInput3.form-control(type='text')
+                                .mb-3
+                                    label.form-label(for='exampleFormControlTextarea4') Сообщение*
+                                    textarea#exampleFormControlTextarea4.form-control(rows='3') 
+                                .form__btn
+                                    button.form__btn__btnSend
+                                        a(href="#") Отправить
+                    .col
+                        .section__contacts__content__navigate.m-5
+                            .section__contacts__content__navigate__map 
+                                div(style='position:relative;overflow:hidden;')
+                                    a(href='https://yandex.ru/maps/10309/bishkek/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:0px;') &Bcy;&icy;&shcy;&kcy;&iecy;&kcy;
+                                    a(href='https://yandex.ru/maps/10309/bishkek/house/Y00YcA5hSEIOQFpofXR2cH1lYg==/?ll=74.685764%2C42.870803&utm_medium=mapframe&utm_source=maps&z=14.27' style='color:#eee;font-size:12px;position:absolute;top:14px;') &Ucy;&lcy;&icy;&tscy;&acy; &Kcy;&acy;&zcy;&acy;&ncy;-&Bcy;&ucy;&lcy;&acy;&kcy;, 1/1&Acy; &mdash; &YAcy;&ncy;&dcy;&iecy;&kcy;&scy;&nbsp;&Kcy;&acy;&rcy;&tcy;&ycy;
+                                    iframe(src='https://yandex.ru/map-widget/v1/-/CCUFqLF9SB' width='560' height='400' frameborder='1' allowfullscreen='true' style='position:relative;')
+                            .section__contacts__content__navigate__adress
+                                h5 Наш адрес: г.Бишкек ул.Казан-Булак, 1/1А 
+                                h5 Контактные номера: +996 708 19 86 25
+        include ../includes/footer

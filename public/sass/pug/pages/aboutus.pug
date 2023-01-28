@@ -1,0 +1,102 @@
+extends ../base
+
+
+block content 
+    .wrapper
+        include ../includes/top-header
+        .banner__content-about-us
+            //----HEADER-------////
+            header#header-bg
+                .header.container-lg
+                    nav.navbar
+                        ul.header__nav-item
+                            li
+                                a.header__nav-link(href="index.html") Главная
+                            li.nav-item.dropdown
+                                a.nav-link.link-drop.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                                    | О Нас
+                                ul.drop-menu.dropdown-menu
+                                    li
+                                        a.dropdown-item(href='#') О Школе
+                                    li
+                                        a.dropdown-item(href='aboutus.html') О Нас
+                                    li
+                                        a.dropdown-item(href='#') Как поступить?
+                            li
+                                a.header__nav-link(href="contacts.html") Контакты
+                            li
+                                a.header__nav-link(href="women.html") Женский
+                            li
+                                a.header__nav-link(href="man.html") Мужской
+                            li
+                                a.header__nav-link(href="tax.html") Закят
+                            li
+                                a.header__nav-link(href="devouring.html") Пожертвование
+                    nav.header__authorization-header
+                        a.header__authorization-header__signIn.me-2(href="#" data-bs-toggle='modal' data-bs-target='#exampleModal1') Регистрация
+                        #exampleModal1.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                            .modal-dialog.modal-fullscreen
+                                .modal-content
+                                    .modal-header
+                                        span(aria-hidden='true' data-bs-dismiss='modal' aria-label='Close') &times;
+                                    .modal-body
+                                        .auth-body
+                                            form.auth-form
+                                                h5.mb-3 Регистрация
+                                                .mb-3
+                                                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Введите электронную почту')
+                                                .mb-3
+                                                    input#exampleInputPassword1.form-control(type='password' placeholder='Придумайте пароль')
+                                                .mb-3
+                                                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Имя')
+                                                .mb-3
+                                                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Фамилия')
+                                                .mb-3
+                                                    select.form-select(aria-label='Default select example')
+                                                        option(selected='') Направление
+                                                        option(value='1') Бакалавриат
+                                                        option(value='2') Магистратура
+                                                .autBtn
+                                                    button.btnSignIn(type='submit')         Зарегистрироваться           
+                        a.header__authorization-header__signIn(href="#" data-bs-toggle='modal' data-bs-target='#exampleModal') Войти
+                        #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                            .modal-dialog.modal-fullscreen
+                                .modal-content
+                                    .modal-header
+                                        span(aria-hidden='true' data-bs-dismiss='modal' aria-label='Close') &times;
+                                    .modal-body
+                                        .auth-body
+                                            form.auth-form
+                                                h5.mb-3 Вход
+                                                .mb-3
+                                                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Логин(Введите электронную почту)')
+                                                .mb-3
+                                                    input#exampleInputPassword1.form-control(type='password' placeholder='Пароль')
+                                                .autBtn
+                                                    button.btnSignIn(type='submit') Войти
+            //--------------BANNER ABOUT US------------//       
+            .banner__content-about-us__title.container-lg
+                p.banner__content-about-us__title__sub-title Поиск знаний является священной обязанностью для каждого человека, исповедующего ислам. Первыми словами, которые услышал Заключительный пророк человечества Мухаммад (с.г.в.) от Всевышнего, стало приказание читать: «Читай во имя твоего Господа, Который сотворил всё сущее» (сура 96, аят 1). Этим аятом Аллах призывает всех людей искать знания, работать над собственным интеллектом, стремиться быть грамотными.
+        section.section__content
+            .container-lg 
+                .section__content__text
+                    p 
+                    | Расул Акрам институтунун  тарыхы коммунисттик партиянын оозунан оту чыгып турган 1965-жылга туура келет. Бул институтту туптогон  Досбол уулу Молдосабыр устазыбыз Бухара Шариптин "Мир араб" медресесинде мударис болуп иштеп турган учурда, элибиз эгемендүүлүккө ээ болуп, асмандан издегени жерден табылып,
+                    br
+                    | 1991-1992 жылдары 120 га жакын дин илимин окуган балдарды Кыргызстандын булун бурчуна эки ай кыдырып отуруп чогултуп дин таркатуу үчүн алып келет. 1992-жылдары кыздарга дин үйрөтүү үчүн, устазыбыз оз айылынан илимдуу кыз келиндерди издеп , эки илим окуган эжелерди таап, алардын бирин кыз келиндерше дин таанытуу максатында Бишкеке кочуруп келет.1993-жылы Бухара жана Ташкент медреселеринде сабак берип жүргөн 15 ке чукул кыргыз жигиттерин чогултуп Бишкек шаарына алып келип , адегенде Бишкеке жакын жайгашкан Шалта айлына медресе ачып 300 дой баланы, андан кийин Кызыл Туу айылында 120 баланы окута баштады. 
+                    br 
+                    | Учуру келип 110 кварталдагы эски мектепти ондоп түздөп, ал жерге 80 баланы жайгаштырган. Андан кийин демөөрчү таап Аламедин 1 кичи районундагы бала бакчаны ижарага алып 200 балдарды жана 150 дой кыздарды окута баштады.
+                    br
+                    | Биздин окуу жай айрыкча Матуридий акыйдасына суугарылган Сирожидин Оший жана ханафий фыкх илиминин алп аалымы имам Сарахсий бабаларыбыздын жолун жолдоп Ханафий мазхабын , Матрудия акыйдасын майданга алып чыгууну максат кылат. Буга чейин кыздар менен балдар бирдей шарттарда 9 жана 11 класста кабыл алынып окутулуп келген болсо, 2015 -жылдан баштап бул окуу жайдын айымдар бөлүмү өзгөчө шартта иштеп келет. Бул шарттардын эң негизгиси 16 жаштан 40 жашка чейинки эже синдилерди төрт жылдык окууга кабыл алып окутулуусу. Айрыкча уй булолуу кыз-келиндерге ыңгайлуу шарттарда балдарына бала бакчасын да камдап,  студенттер ойлонбостон балдары менен чогуу окуп кеткенге ыңгайлуу болгон, буга чейин эч бир окуу жайда кармалбаган өтө зор шарттар каралган. Мындан сырткары кол өнөрчүлүк, кулинария, информатика, англис тили, орус тили жана өзгөчө аялдарга тиешелүү сабактар кошумча окутулат 
+                    
+                    //- .section__content__text__first
+                    //-     h4 О исламской институте имени “Расула-Акрама”
+                    //-     p Институт “Расула-Акрама” это комплексное религиозное образование специально для Вас! Многовековой опыт преподавания исламских дисциплин адаптирован именно для современной русскоязычной аудитории. Мы собрали самое нужное, важное, необходимое и постарались преподнести это на понятном доступном языке. График обучения максимально прост и гибок, идеально подходит для того, кто работает или получает образование в других учебных заведениях. Вы просматриваете видео уроки в тот день и в то время, когда вам удобно!
+                    //- .section__content__text__second
+                    //-     h4 О исламской институте имени “Расула-Акрама”
+                    //-     p Институт “Расула-Акрама” это комплексное религиозное образование специально для Вас! Многовековой опыт преподавания исламских дисциплин адаптирован именно для современной русскоязычной аудитории. Мы собрали самое нужное, важное, необходимое и постарались преподнести это на понятном доступном языке. График обучения максимально прост и гибок, идеально подходит для того, кто работает или получает образование в других учебных заведениях. Вы просматриваете видео уроки в тот день и в то время, когда вам удобно!
+                    //- .section__content__text__third
+                    //-     h4 О исламской институте имени “Расула-Акрама”
+                    //-     p Институт “Расула-Акрама” это комплексное религиозное образование специально для Вас! Многовековой опыт преподавания исламских дисциплин адаптирован именно для современной русскоязычной аудитории. Мы собрали самое нужное, важное, необходимое и постарались преподнести это на понятном доступном языке. График обучения максимально прост и гибок, идеально подходит для того, кто работает или получает образование в других учебных заведениях. Вы просматриваете видео уроки в тот день и в то время, когда вам удобно!
+        //-----FOOTER-------//
+        include ../includes/footer

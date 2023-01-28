@@ -1,0 +1,171 @@
+extends ../base
+
+
+block content
+    .wrapper
+      include ../includes/top-header
+      .banner
+        header#header-bg
+          .header.container-lg
+            nav.navbar
+              ul.header__nav-item
+                li
+                  a.header__nav-link(href="index.html") Главная
+                li.nav-item.dropdown
+                  a.nav-link.link-drop.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                    | О Нас
+                  ul.drop-menu.dropdown-menu
+                    li
+                      a.dropdown-item(href='#') О Школе
+                    li
+                      a.dropdown-item(href='aboutus.html') О Нас
+                    li
+                      a.dropdown-item(href='#') Как поступить?
+                li
+                  a.header__nav-link(href="contacts.html") Контакты
+                li
+                  a.header__nav-link(href="women.html") Женский
+                li
+                  a.header__nav-link(href="man.html") Мужской
+                li
+                  a.header__nav-link(href="tax.html") Закят
+                li
+                  a.header__nav-link(href="devouring.html") Пожертвование
+            nav.header__authorization-header
+              a.header__authorization-header__signUp.me-2(href="#" data-bs-toggle='modal' data-bs-target='#exampleModal') Войти
+              #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                .modal-dialog.modal-fullscreen
+                  .modal-content
+                    .modal-header
+                      span(aria-hidden='true' data-bs-dismiss='modal' aria-label='Close') &times;
+                    .modal-body
+                      .auth-body
+                            form.auth-form
+                              h5.mb-3 Вход
+                              .mb-3
+                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Логин(Введите электронную почту)')
+                              .mb-3
+                                input#exampleInputPassword1.form-control(type='password' placeholder='Пароль')
+                              .autBtn
+                                button.btnSignIn(type='submit') Войти    
+              a.header__authorization-header__signIn(href="#" data-bs-toggle='modal' data-bs-target='#exampleModal1') Регистрация
+              #exampleModal1.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                .modal-dialog.modal-fullscreen
+                  .modal-content
+                    .modal-header
+                      span(aria-hidden='true' data-bs-dismiss='modal' aria-label='Close') &times;
+                    .modal-body
+                      .auth-body
+                            form.auth-form
+                              h5.mb-3 Регистрация
+                              .mb-3
+                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Введите электронную почту')
+                              .mb-3
+                                input#exampleInputPassword1.form-control(type='password' placeholder='Придумайте пароль')
+                              .mb-3
+                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Имя')
+                              .mb-3
+                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Фамилия')
+                              .mb-3
+                                select.form-select(aria-label='Default select example')
+                                  option(selected='') Направление
+                                  option(value='1') Женский
+                                  option(value='2') Мужской
+                              .autBtn
+                                button.btnSignIn(type='submit') Зарегистрироваться                  
+        #carouselExampleCaptions.carousel.slide(data-bs-ride='true')
+          .carousel-indicators
+            button.active(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+            button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1' aria-label='Slide 2')
+            button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2' aria-label='Slide 3')
+          .carousel-inner
+            .carousel-item.active
+              .carousel-item-img.d-block
+              .carousel-caption.d-md-block
+                h5  ИСЛАМСКИЙ ИНСТИТУТ ИМЕНИ “РАСУЛА-АКРАМА”
+                p Главной целью женского центра является побуждение женщины- матери к наилучшему исполнению своей роли в семье и обществе, к осознанию своего особого предназначения и обязанности перед Всевышним в деле воспитания будущего поколения. На базе духовного женского центра постоянно проводятся конкурсы на знание основ ислама, биографии Пророков, конкурсы мусульманской моды и другие мероприятия.
+                button.carousel-caption__btn
+                  a(href="application.html")  Оставить заявку
+            .carousel-item
+              .carousel-item-img1.d-block
+              .carousel-caption.d-md-block
+                h5  ИСЛАМСКИЙ ИНСТИТУТ ИМЕНИ “РАСУЛА-АКРАМА”
+                p Главной целью женского центра является побуждение женщины- матери к наилучшему исполнению своей роли в семье и обществе, к осознанию своего особого предназначения и обязанности перед Всевышним в деле воспитания будущего поколения. На базе духовного женского центра постоянно проводятся конкурсы на знание основ ислама, биографии Пророков, конкурсы мусульманской моды и другие мероприятия.
+                button.carousel-caption__btn
+                  a(href="application.html")  Оставить заявку
+            .carousel-item
+              .carousel-item-img2.d-block
+              .carousel-caption.d-md-block
+                h5  ИСЛАМСКИЙ ИНСТИТУТ ИМЕНИ “РАСУЛА-АКРАМА”
+                p Главной целью женского центра является побуждение женщины- матери к наилучшему исполнению своей роли в семье и обществе, к осознанию своего особого предназначения и обязанности перед Всевышним в деле воспитания будущего поколения. На базе духовного женского центра постоянно проводятся конкурсы на знание основ ислама, биографии Пророков, конкурсы мусульманской моды и другие мероприятия.
+                button.carousel-caption__btn
+                  a(href="application.html")  Оставить заявку
+          button.carousel-control-prev(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.visually-hidden Previous
+          button.carousel-control-next(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.visually-hidden Next
+      section.section__content
+        .container-lg
+          .section__base.mb-5
+            .section__base__left
+              .card(style='max-width: 750px;').section__content__card
+                .card-body
+                  ul.card__list
+                    li
+                      a(href="teachers.html").link__item
+                        i.fa-solid.fa-graduation-cap
+                        h6 Преподователи
+                    li
+                      a(href="events.html" data-bs-toggle="tooltip" title="Default tooltip").link__item
+                        i.fa-solid.fa-calendar-day
+                        h6 Мероприятия
+                    li
+                      a(href="distance-learning.html").link__item
+                        i.fa-solid.fa-check
+                        h6  Дистанционное обучение
+              .card__time.mt-5
+                iframe(src='https://namaztimes.kz/ru/widget/fuse' width='300px' height='380px' frameborder='0') Update Browser!
+            .section__base__right
+              h3 Последние новости
+              .card.mb-3(style='max-width: 774px;').section__content__Newscard
+                .row.g-0
+                  .col-md-4
+                    img.img-fluid(src='../assets/newsImg.png' alt='#')
+                  .col-md-8
+                    .card-body
+                      h5.card-title Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                      p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum in eget ridiculus purus donec. Velit cras etiam velit dui volutpat semper pellentesque.
+                      .card-text
+                        p.text-muted date
+                        p.text-muted 
+                          a(href="news-details.html") more...
+              .card.mb-3(style='max-width: 774px;').section__content__Newscard
+                .row.g-0
+                  .col-md-4
+                    img.img-fluid(src='../assets/newsImg.png' alt='#')
+                  .col-md-8
+                    .card-body
+                      h5.card-title Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                      p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum in eget ridiculus purus donec. Velit cras etiam velit dui volutpat semper pellentesque.
+                      .card-text
+                        p.text-muted date
+                        p.text-muted more...
+              .card.mb-3(style='max-width: 774px;').section__content__Newscard
+                .row.g-0
+                  .col-md-4
+                    img.img-fluid(src='../assets/newsImg.png' alt='#')
+                  .col-md-8
+                    .card-body
+                      h5.card-title Lorem ipsum dolor sit amet, consectetur adipiscing elim.
+                      p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum in eget ridiculus purus donec. Velit cras etiam velit dui volutpat semper pellentesque.
+                      .card-text
+                        p.text-muted date
+                        p.text-muted more...
+          //- .card.text-center
+          //-   .card-body.bodyCard
+          //-     h5.bodyCard-title Lorem, ipsum dolor.
+          //-     p.bodyCard-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem temporibus a ullam? Delectus blanditiis, eos nulla maxime similique nam laborum ab tempora iure, cum necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a aut doloremque commodi culpa modi hic recusandae ut velit neque cumque vero esse expedita porro iure saepe, minima eveniet explicabo rem consequatur quos assumenda ad cupiditate! Est suscipit quae corporis!
+          //-     h5.bodyCard-number.m-5 9878 8976 0967 5678
+      include ../includes/footer

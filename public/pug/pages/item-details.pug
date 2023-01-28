@@ -1,0 +1,35 @@
+extends ../base
+
+
+block content 
+    .wrapper
+        include ../includes/user-top-header
+        section.section__banner
+            include ../includes/user-header
+            section.section__item-details__content
+                .container-lg
+                    .row.p-5
+                        .col-md-4 
+                            .section__item-details__content-img
+                                img(src="https://avatars.mds.yandex.net/i?id=79bf9a0227f5730850e2aa47e538ca23-4615722-images-thumbs&n=13", alt="#")
+                        .col-md-8
+                            h4 Физика
+                            p.info__sub-title Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt at tempora nihil, alias voluptate quaerat autem? Autem blanditiis voluptas et consequatur at consectetur dolorum quos! Consectetur voluptates illo, delectus nobis temporibus nisi ea ex excepturi tempora iure recusandae consequatur, repellendus, laborum eos odio iusto. Asperiores sit, quisquam beatae hic nesciunt fuga optio necessitatibus nostrum? Dolorem quisquam dignissimos amet exercitationem magnam necessitatibus accusamus, illo ducimus quas quos? Facere et officia recusandae, voluptate ex sit eaque dicta. Repudiandae molestias repellat soluta cumque officiis deserunt voluptates doloremque dolorem cupiditate! Voluptatem autem eius suscipit blanditiis. Quia officia nihil suscipit? Doloremque in non quo cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil dicta magni velit sunt dolor molestiae sit dolore cupiditate quidem optio, odit deserunt, accusantium adipisci accusamus, illum exercitationem totam expedita
+                            p.item-download
+                                a.btnItems(data-bs-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+                                    | Посмотреть материал
+                                    i.fa-solid.fa-arrow-down.ms-2
+                                #collapseExample.collapse
+                                    .card.card-body
+                                        span.colapSpan
+                                            a(href="#" download) 1.1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae exercitationem itaque sequi. 
+                                        span.colapSpan
+                                            a(href="#") 1.2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae exercitationem itaque sequi. 
+                                        span.colapSpan
+                                            a(href="#") 1.3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae exercitationem itaque sequi. 
+                                        span.colapSpan
+                                            a(href="#") 1.4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae exercitationem itaque sequi. 
+                                        span.colapSpan
+                                            a(href="#") 1.5 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae exercitationem itaque sequi. 
+
+            include ../includes/footer

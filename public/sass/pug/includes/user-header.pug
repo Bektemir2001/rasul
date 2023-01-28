@@ -1,0 +1,35 @@
+header#header-bg
+  .header.container-lg
+    nav.navbar
+      ul.header__nav-item
+        li
+          a.header__nav-link(href="index.html") Главная
+        li.nav-item.dropdown
+          a.nav-link.link-drop.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | О Нас
+          ul.drop-menu.dropdown-menu
+            li
+              a.dropdown-item(href='#') О Школе
+            li
+              a.dropdown-item(href='aboutus.html') О Нас
+            li
+              a.dropdown-item(href='#') Как поступить?
+        li
+          a.header__nav-link(href="contacts.html") Контакты
+        li
+          a.header__nav-link(href="women.html") Женский
+        li
+          a.header__nav-link(href="man.html") Мужской
+        li
+          a.header__nav-link(href="semestr.html") Семестр
+        li
+          a.header__nav-link(href="user-items.html") Обучение
+    nav.header__authorization
+      button#dropdownMenuButton1.header__authorization__btn(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+        i.fa-solid.fa-user
+      ul.dropdown-menu.drop-user(aria-labelledby='dropdownMenuButton1')
+        li
+          a.dropdown-item(href='profile-user.html') Профиль
+        li
+          a.dropdown-item(href='#') Выйти
+

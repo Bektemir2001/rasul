@@ -1,0 +1,77 @@
+extends ../base
+
+block content 
+    .wrapper 
+        include ../includes/user-top-header
+        section.section__banner 
+            include ../includes/user-header
+            .container-lg.section__profile.mb-5
+                .row 
+                    .col-md-3
+                        .section__profile__user
+                            img(src="https://avatars.mds.yandex.net/i?id=1ec55abea3024c706388edcd1184f2ee-5916170-images-thumbs&n=13", alt="")
+                            .section__profile__user__info
+                                h4 John Brown
+                                p Lorem, ipsum dolor.
+                                .section__profile__user__info-title 
+                                    p Возраст: 
+                                        span 23
+                                    p Статус:
+                                        span Студент
+                                    p Адресс:
+                                        span Бишкек 
+                                                br
+                                                |ул Горького 132
+                    .col-md-9
+                        .section__profile__data.p-5
+                            table.table.table-bordered
+                                thead
+                                    tr
+                                    th(scope='col') #
+                                    th(scope='col') First
+                                    th(scope='col') Last
+                                    th(scope='col') Handle
+                                tbody
+                                    tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                    tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                    tr
+                                        th(scope='row') 3
+                                        td(colspan='2') Larry the Bird
+                                        td @twitter
+                                    tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                    tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                    tr
+                                        th(scope='row') 3
+                                        td(colspan='2') Larry the Bird
+                                        td @twitter
+                                    tr
+                                        th(scope='row') 1
+                                        td Mark
+                                        td Otto
+                                        td @mdo
+                                    tr
+                                        th(scope='row') 2
+                                        td Jacob
+                                        td Thornton
+                                        td @fat
+                                    tr
+                                        th(scope='row') 3
+                                        td(colspan='2') Larry the Bird
+                                        td @twitter
+        include ../includes/footer

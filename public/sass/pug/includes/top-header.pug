@@ -1,0 +1,106 @@
+.top-header
+  .container-lg.top-header__list
+    .top-header__social
+      a.social-site(href='#')
+        i.fa-brands.fa-instagram
+      a.social-site(href='#')
+        i.fa-brands.fa-twitter
+      a.social-site(href='#')
+        i.fa-brands.fa-vk
+      a.social-site(href='#')
+        i.fa-brands.fa-telegram
+    .top-header__logo 
+      a.navbar-brand(href='index.html')
+        i.fa-solid.fa-moon
+    .top-header__number
+      h5
+        a(href="tel: +996708198625") +996 708 19 86 25
+    .auth-user
+      a.header__signUp.me-2(href="#" data-bs-toggle='modal' data-bs-target='#exampleModal3') Войти
+      #exampleModal3.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-fullscreen
+          .modal-content
+            .modal-header
+              span(aria-hidden='true' data-bs-dismiss='modal' aria-label='Close') &times;
+            .modal-body
+              .auth-body
+                    form.auth-form
+                      h5.mb-3 Вход
+                      .mb-3
+                        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Логин(Введите электронную почту)')
+                      .mb-3
+                        input#exampleInputPassword1.form-control(type='password' placeholder='Пароль')
+                      .autBtn
+                        button.btnSignIn(type='submit') Войти  
+      a.header__signIn.me-2(href="#" data-bs-toggle='modal' data-bs-target='#exampleModal2') Регистрация
+      #exampleModal2.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-fullscreen
+          .modal-content
+            .modal-header
+              span(aria-hidden='true' data-bs-dismiss='modal' aria-label='Close') &times;
+            .modal-body
+              .auth-body.mt-5
+                form.auth-form
+                  h5.mb-3 Регистрация
+                  .mb-3
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Введите электронную почту')
+                  .mb-3
+                    input#exampleInputPassword1.form-control(type='password' placeholder='Придумайте пароль')
+                  .mb-3
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Имя')
+                  .mb-3
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Фамилия')
+                  .mb-3
+                    select.form-select.form-control(aria-label='Default select example' placeholder='Направление')
+                      option(selected='') Направление
+                      option(value='1') Бакалавриат
+                      option(value='2') Магистратура
+                  .autBtn
+                    button.btnSignIn(type='submit') Зарегистрироваться    
+    .header__hamburgerMenu(onClick="toggleMenu()")
+      button.hamburger.hamburger--spring(type='button')
+          span.hamburger-box
+              span.hamburger-inner
+      .header__dropMenu
+        .header__top
+          .header__top__social
+            a.social-site(href='#')
+              i.fa-brands.fa-instagram
+            a.social-site(href='#')
+              i.fa-brands.fa-twitter
+            //- a.social-site(href='#')
+            //-   i.fa-brands.fa-facebook-f
+            a.social-site(href='#')
+              i.fa-brands.fa-vk
+            a.social-site(href='#')
+              i.fa-brands.fa-telegram
+            //- a.social-site(href='#')
+            //-   i.fa-brands.fa-odnoklassniki
+          .header__top__logo 
+            a.navbar-brand(href='index.html')
+              i.fa-solid.fa-moon
+          .header__top__number
+            h5
+              | +996 708 19 86 25
+        .header__linksBlock
+          li: a.header__nav-link(href="index.html") Главная
+          //- li: a.header__nav-link(href="aboutus.html") О нас
+          li.nav-item.dropdown
+          a.nav-link.link-drop.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | О Нас
+          ul.drop-menu.dropdown-menu
+            li
+              a.dropdown-item(href='#') О Школе
+            li
+              a.dropdown-item(href='aboutus.html') О Нас
+            li
+              a.dropdown-item(href='#') Как поступить?
+          li: a.header__nav-link(href="contacts.html") Контакты
+          li: a.header__nav-link(href="women.html") Женский 
+          li: a.header__nav-link(href="man.html") Мужской
+          li: a.header__nav-link(href="tax.html") Закят
+          li: a.header__nav-link(href="devouring.html") Пожертвование
+        .header__linksItem 
+          li: a.header__nav-link(href="teachers.html") Преподователи
+          li: a.header__nav-link(href="events.html") Мероприятия
+          li: a.header__nav-link(href="distance-learning.html") Дистанционное обучение
